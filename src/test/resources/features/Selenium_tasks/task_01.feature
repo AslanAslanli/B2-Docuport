@@ -15,8 +15,8 @@ Feature: Day 01 tasks
   Scenario: User successfully logs in and logs out of Docuport
     Given the user lands on the Docuport login page at "https://beta.docuport.app/"
     When the user logs in with the following credentials:
-      | email                 | password |
-      | b1g2_client@gmail.com | Group2   |
+      | email    | b1g2_client@gmail.com |
+      | password | Group2                |
     Then the user should see the dashboard indicating a successful login
     When the user clicks the logout button
     Then validate user is redirected to the login page
